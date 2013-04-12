@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>dwr-rajax</groupId>
+    <artifactId>dwr-rajax</artifactId>
+    <version>1.0-SNAPSHOT</version>
+
+    <dependencies>
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-web</artifactId>
+            <version>3.1.2.RELEASE</version>
+        </dependency>
+        <dependency>
+            <!--
+                DWR 3.0.RC2 not present on maven repo
+                install it manually
+            -->
+            <groupId>org.directwebremoting</groupId>
+            <artifactId>dwr</artifactId>
+            <version>3.0.RC2</version>
+        </dependency>
+        <dependency>
+            <!--
+                required by DWR 3.x to run reverse Ajax on Jetty ver. < 7.x
+                see also: http://www.butterdev.com/dwr/2010/01/dwr-3-x-and-jetty-continuations-on-jetty-6-x/
+            -->
+            <groupId>org.eclipse.jetty</groupId>
+            <artifactId>jetty-continuation</artifactId>
+            <version>7.6.10.v20130312</version>
+        </dependency>
+    </dependencies>
+
+</project>

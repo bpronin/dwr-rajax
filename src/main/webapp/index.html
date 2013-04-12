@@ -1,0 +1,20 @@
+<html>
+
+<head>
+    <script type="text/javascript" src="dwr/engine.js"></script>
+    <script type="text/javascript" src="dwr/util.js"></script>
+    <script type='text/javascript' src="dwr/interface/Clock.js"></script>
+    <script type="text/javascript" src="rajax.js"></script>
+</head>
+
+<body>
+<div id="demoDiv">
+    <input type="button" value="Update" onclick="Clock.updateClockDisplay();"/>
+    <input type="button" value="Start/Stop" onclick="Clock.toggle();"/>
+
+    <p>Time: <span id="clockDisplay"></span></p>
+    <p>Server status: <span id="pollStatusDisplay"></span></p>
+    <p>Error: <span id="errorDisplay"></span></p>
+</div>
+</body>
+</html>
