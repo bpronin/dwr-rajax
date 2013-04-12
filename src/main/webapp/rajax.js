@@ -20,6 +20,6 @@ function updatePollStatus(pollStatus) {
     dwr.util.setValue("pollStatusDisplay", pollStatus ? "Online" : "Offline", {escapeHtml: false});
 }
 
-updateClockDisplay = function (time) {
+function updateClockDisplay(time) {
     dwr.util.setValue("clockDisplay", time);
 }

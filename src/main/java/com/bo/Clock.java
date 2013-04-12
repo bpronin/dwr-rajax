@@ -35,7 +35,7 @@ public class Clock implements Runnable {
         Browser.withAllSessions(new Runnable() {
             public void run() {
                 try {
-                    ScriptSessions.addFunctionCall("updateClockDisplay", new Date().toString());
+                    ScriptSessions.addFunctionCall("updateClockDisplay", new Date());
                 } catch (Exception x) {
                     x.printStackTrace();
                 }
